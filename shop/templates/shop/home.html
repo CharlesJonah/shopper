@@ -1,0 +1,250 @@
+{% load render_bundle from webpack_loader %} 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Shopper</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="../../static/shop/css/home-css.css">
+  <link rel="stylesheet" type="text/css" href="../../static/shop/css/register-form-css.css">
+  <link rel="stylesheet" type="text/css" href="../../static/shop/css/register-form-elements.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style = "background-color: white;background-image: none;border-radius: 0px; height:60px;" >
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header" style="font-family: "Brush Script MT",cursive;">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img alt="sema" src="../../static/shop/images/logo.png" width="150px" height ="50px" style = "margin-top: -10px;">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">What We Do</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacts</a>
+                    </li>
+                    <li>
+                        <a href="#signin">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container main-body">
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <p class="header-note">Ultimate Shopper's Experience</p>
+                <div="lead" id ="lead"></div>
+                
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-lg-4">
+            </div>
+
+            <div class="col-lg-4">
+                <center><button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#signup">Sign Up</button></center>
+            </div>
+
+            <div class="col-lg-4">
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-lg-2">
+            </div>
+
+            <div class="col-lg-8">
+                {{ search_form.search }}
+            </div>
+
+            <div class="col-lg-2">
+            </div>
+        </div>
+
+         <div class="row pic">
+            <div class="col-lg-4">
+                <img src="../../static/shop/images/1.jpg" alt="Smiley face" height="300" width="100%"/>
+            </div>
+
+            <div class="col-lg-4">
+                <img src="../../static/shop/images/2.jpg" alt="Smiley face" height="300" width="100%"/>
+            </div>
+
+            <div class="col-lg-4">
+                <img src="../../static/shop/images/3.jpg" alt="Smiley face" height="300" width="100%"/>
+            </div>
+        </div>
+
+        <div class="row pic">
+            <div class="col-lg-4">
+                <img src="../../static/shop/images/4.jpg" alt="Smiley face" height="300" width="100%"/>
+            </div>
+
+            <div class="col-lg-4">
+                <img src="../../static/shop/images/5.jpg" alt="Smiley face" height="300" width="100%"/>
+            </div>
+
+            <div class="col-lg-4">
+                <img src="../../static/shop/images/6.jpg" alt="Smiley face" height="300" width="100%"/>
+            </div>
+        </div>
+
+        <div class="row pic">
+            <div class="col-lg-4">
+                <img src="../../static/shop/images/1.jpg" alt="Smiley face" height="300" width="100%"/>
+            </div>
+
+            <div class="col-lg-4">
+                <img src="../../static/shop/images/2.jpg" alt="Smiley face" height="300" width="100%"/>
+            </div>
+
+            <div class="col-lg-4">
+                <img src="../../static/shop/images/3.jpg" alt="Smiley face" height="300" width="100%"/>
+            </div>
+        </div>
+
+        <div class="row pic">
+            <div class="col-lg-4">
+                <img src="../../static/shop/images/4.jpg" alt="Smiley face" height="300" width="100%"/>
+            </div>
+
+            <div class="col-lg-4">
+                <img src="../../static/shop/images/5.jpg" alt="Smiley face" height="300" width="100%"/>
+            </div>
+
+            <div class="col-lg-4">
+                <img src="../../static/shop/images/5.jpg" alt="Smiley face" height="300" width="100%"/>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="modal-register-label" aria-hidden="true">
+        	<div class="modal-dialog">
+        		<div class="modal-content">
+        			
+        			<div class="modal-header">
+        				<button type="button" class="close" data-dismiss="modal">
+        					<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+        				</button>
+        				<h3 class="modal-title" id="modal-register-label">Sign Up</h3>
+        			</div>
+        			
+        			<div class="modal-body">
+        				
+	                    <form role="form" action="{% url 'shop:signup' %}" method="post">
+                            {% csrf_token %}
+                            {% if submit_error %}
+                                {{ submit_error }}
+                            {% endif %}
+
+                            {% for field in sign_up_form %}
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <div class ="field_error"> {{ field.errors }} </div>
+                                        {{ field }}
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            {{ sign_up_form.non_field_errors }}
+	                        <button type="submit" class="modal-btn">Sign Up</button>
+	                    </form>
+                        <div class="row">
+                                <div class="col-lg-12">
+                                    <br />
+                                   <center><a href="#signin">Already have an account? Sign In here</a></center>
+                                </div>
+                        </div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="modal-register-label" aria-hidden="true">
+        	<div class="modal-dialog">
+        		<div class="modal-content">
+        			
+        			<div class="modal-header">
+        				<button type="button" class="close" data-dismiss="modal">
+        					<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+        				</button>
+        				<h3 class="modal-title" id="modal-register-label">Sign In</h3>
+        			</div>
+        			
+        			<div class="modal-body">
+        				
+	                    <form role="form" action="{% url 'shop:signin' %}" method="post">
+                            {% csrf_token %}
+                            {% if wrong_credentials %}
+                            <div class="alert alert-danger" role="alert">
+                                {{ wrong_credentials }}
+                            </div>
+                            {% endif %}
+
+                            {% for field in sign_in_form %}
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <div class ="field_error"> {{ field.errors }} </div>
+                                        {{ field }}
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            {{ sign_in_form.non_field_errors }}
+	                        <button type="submit" class="modal-btn">Sign In</button>
+	                    </form>
+	                    
+        			</div>
+        			
+        		</div>
+        	</div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+</body>
+{% render_bundle 'main' %}
+</html>

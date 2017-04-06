@@ -1,0 +1,48 @@
+body {
+        padding-top: 60px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+.main-body{  
+    /*height:600px;*/
+          }
+body{
+    background-color: #ebeaed;
+    }
+.header-note{
+    color: #676866;
+    font-size: 70px;
+    margin-top: 40px;
+    font-weight: 200;
+        }
+.lead{
+    font-size: 40px;
+    margin-top: 30px;
+    color: #60605e;
+    font-family: "Brush Script MT",cursive;
+}
+
+.btn {
+    background-image: none;
+    background-color: #ef0765;
+    margin-top: 40px;
+    border-radius: 4px;
+    height:60px;
+    border:none !important;
+    width:70%;
+}
+    
+.btn:hover, .btn:focus, .btn.active:focus{
+    background-image: none;
+    background-color: #c10753;
+    margin-top: 40px;
+    border-radius: 4px;
+    height:60px;
+    border:none !important;
+    width:70%;
+}
+.field_error{
+    color:#ff0000;
+}
+.pic{
+    margin-top: 80px;
+}
